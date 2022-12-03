@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:src="@drawable/logo_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deep Fake Detector"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/calibri"
+        android:id="@+id/txtTitle"
+        />
+
+    <TextView
+        android:id="@+id/txtSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Create Your Account"
+        android:textSize="36dp"
+        android:fontFamily="@font/calibri"
+        />
+
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSubTitle"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="First Name"
+        android:fontFamily="@font/calibri"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFirstName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Last Name"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/calibri"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLastName"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/calibri"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/calibri"
+        android:textSize="20dp"
+        />
+
+    <EditText
+        android:id="@+id/txtConfirmPass"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPass"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/calibri"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:layout_below="@+id/txtConfirmPass"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#2980b9"
+        android:fontFamily="@font/calibri"
+        android:textSize="20dp"
+        android:onClick="changeView"
+        />
+
+    <TextView
+        android:id="@+id/txtRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Already have an Account Yet? Click here."
+        android:textColor="#2980b9"
+        android:fontFamily="@font/calibri"
+        android:textSize="18dp"
+        android:onClick="changeView"
+        />
+
+
+</RelativeLayout>
